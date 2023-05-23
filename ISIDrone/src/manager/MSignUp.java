@@ -62,8 +62,12 @@ public class MSignUp {
 			
 			ps.setString(1, user.getEmail());
 			ResultSet rs = ps.executeQuery();
-			
-			isExist = (rs.first() ? 0 : 1);
+                        
+                                               
+			isExist = (rs.next() ? 0 : 1);
+                        
+                        
+                        
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

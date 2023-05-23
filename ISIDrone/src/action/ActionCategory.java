@@ -23,7 +23,7 @@ public class ActionCategory {
 				//Si l'utilisateur entre lui même une valeur pour le paramêtre category dans la barre d'adresse
 				// alors s'il la catégorie est invalide, alors la catégorie sélectionné deviendra 1 (qui représente toutes les catégories)
 				categorySelected = Integer.valueOf(paramCategory);
-				if(MCategory.isExist(categorySelected) != 0)
+				if(MCategory.isExist(categorySelected) == 0)
 					categorySelected = 1;
 			}
 			catch(NumberFormatException e) {
