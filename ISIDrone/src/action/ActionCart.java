@@ -30,6 +30,8 @@ public class ActionCart {
 	public static void addItem(HttpServletRequest request,
 			HttpServletResponse response, String strId, String strQty) {
 
+            
+                // petit commentaire
 		if ((Misc.isNumeric(strQty) || strQty.equals("")) && Misc.isNumeric(strId)) {
 			
 			// Initialize la quantité a 1 s'il n'est pas initialisé
