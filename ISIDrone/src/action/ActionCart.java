@@ -32,7 +32,7 @@ public class ActionCart {
 
             
                 // petit commentaire
-		if ((Misc.isNumeric(strQty) || strQty.equals("")) && Misc.isNumeric(strId)) 
+		if ((Misc.isNumeric(strQty) || strQty.equals("")) && Misc.isNumeric(strId)) {
 			
 			// Initialize la quantité a 1 s'il n'est pas initialisé
 			int qty = 1;
