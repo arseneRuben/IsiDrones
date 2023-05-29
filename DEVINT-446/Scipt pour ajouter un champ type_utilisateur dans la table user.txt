@@ -1,3 +1,16 @@
 USE isidrone;
 ALTER TABLE user
 ADD type_utilisateur VARCHAR(20);
+
+
+INSERT INTO `isidrone`.`address`
+(`no`,`appt`,`street`,`zip`,`city`,`state`,`country`)
+VALUES
+("205","205","avenue Viger ouest","H2Z 1G2","Montréal","QC","Canada");
+
+INSERT INTO `isidrone`.`user`
+(`lastName`,`firstName`,`email`,`password`,`ship_address_id`,`type_utilisateur`)
+VALUES
+('Francois','Capone','fcapone@collegeuniversel.ca','abc123...',3,'ADMIN');
+
+Note: ship_address_id est l'id dans la table address
