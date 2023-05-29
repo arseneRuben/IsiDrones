@@ -36,6 +36,33 @@
 				Laurent Beauregard <small>Webmestre</small>
 			</h3>
 		</div>
+            
+            <div class="col-lg-6 col-sm-6 text-center">
+			<img class="img-circle img-responsive img-center"
+				src="images/about/Montassar.jpg" alt="Photo de Montassar"
+				style="max-width: 250px; max-height: 250px; min-width: 250px;">
+			<h3>
+				Montassar Boukhari <small>Webmestre</small>
+			</h3>
+		</div>
+            
+            <div class="col-lg-6 col-sm-6 text-center">
+			<img class="img-circle img-responsive img-center"
+				src="images/about/Jean.jpeg" alt="Photo de Jean"
+				style="max-width: 250px; max-height: 250px; min-width: 250px;">
+			<h3>
+				Jean Waston Therane <small>Webmestre</small>
+			</h3>
+		</div>
+            
+            <div class="col-lg-6 col-sm-6 text-center">
+			<img class="img-circle img-responsive img-center"
+				src="images/about/Arsene.png" alt="Photo de Arsene"
+				style="max-width: 250px; max-height: 250px; min-width: 250px;">
+			<h3>
+				Arsene Fokam Poka <small>Webmestre</small>
+			</h3>
+		</div>
 	</div>
 	<hr>
 </div>
