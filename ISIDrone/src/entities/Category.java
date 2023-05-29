@@ -4,6 +4,7 @@ public class Category {
 	private int id;
 	private String name,
 		description;
+        private Boolean isActive;
 	
 	public Category() {}
 	
@@ -12,6 +13,21 @@ public class Category {
 		this.name = name;
 		this.description = description;
 	}
+
+    public Boolean getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Boolean isActive) {
+        this.isActive = isActive;
+    }
+
+    public Category(int id, String name, String description, Boolean isActive) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.isActive = isActive;
+    }
 
 	public int getId() {
 		return id;
