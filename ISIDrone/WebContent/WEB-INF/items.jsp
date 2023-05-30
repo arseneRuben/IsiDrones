@@ -30,6 +30,7 @@
             </div>
             <div class="col-md-9">
             	<div class="row">
+                    <p>Resultat de recherche en fonction du mot clé: <b><%= (String)request.getAttribute("search") %></b></p>
 <%
 	//Format a deux decimal
 	DecimalFormat df = new DecimalFormat("####0.00");

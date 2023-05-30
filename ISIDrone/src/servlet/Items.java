@@ -33,8 +33,15 @@ public class Items extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Si le paramètre category est présent
 		ActionCategory.getCategories(request, response);
+                     String search = request.getParameter("searchInput");
+                     
+                     if(search != null && !search.equals("")){
 		ActionItems.getItems(request, response);
-		
+		}else {
+                    ActionItems.getItems(request, response);
+                }
+ 
+                request.setAttribute("search", search);     
 		request.getRequestDispatcher(Const.PATH_PAGE_ITEMS).forward(request, response);
 	}
 	
