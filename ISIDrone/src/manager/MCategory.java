@@ -17,7 +17,7 @@ public class MCategory {
 			String query = "SELECT * FROM category";
 			ResultSet rs = MDB.execQuery(query);
 			while(rs.next()) {
-				categories.add(new Category(rs.getInt(1), rs.getString(2), rs.getString(3)));	
+				categories.add(new Category(rs.getInt(1), rs.getString(2), rs.getString(3),rs.getBoolean(4)));	
 			}
 			
 		} catch (SQLException e) {
