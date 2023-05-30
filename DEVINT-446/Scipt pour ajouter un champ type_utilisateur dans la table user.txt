@@ -1,6 +1,5 @@
 USE isidrone;
-ALTER TABLE user
-ADD type_utilisateur VARCHAR(20);
+ALTER TABLE user MODIFY COLUMN type_utilisateur VARCHAR(20) NOT NULL DEFAULT 'CLIENT';
 
 
 INSERT INTO `isidrone`.`address`
