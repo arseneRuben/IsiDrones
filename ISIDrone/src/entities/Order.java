@@ -6,7 +6,8 @@ public class Order extends Cart{
 	int id;
 	int userId;
 	String date;
-	
+	boolean isShipped;
+
 	public Order() {
 		super();
 	}
@@ -35,5 +36,11 @@ public class Order extends Cart{
 		this.date = date;
 	}
 	
-	
+	public boolean getIsShipped() {
+            return isShipped;
+        }
+
+        public void setIsShipped(boolean isShipped) {
+            this.isShipped = isShipped;
+        }
 }
