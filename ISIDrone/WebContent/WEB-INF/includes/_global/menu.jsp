@@ -12,9 +12,9 @@
 				<ul class="nav navbar-nav">
 					<li>
 <!-- 						La recherche n'est pas fini d'être implementé -->
-						<form class="navbar-form" role="search" action="item?">
+						<form class="navbar-form" role="search" action="items?">
 							<div id="auto-search" class="form-group"  style="padding-right:0;">
-								<input class="form-control biginput" placeholder="Rechercher" id="autocomplete" type="text">
+								<input class="form-control biginput" placeholder="Rechercher" name="searchInput" id="autocomplete" type="text">
 							</div>
 					        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 						</form>

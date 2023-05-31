@@ -86,6 +86,7 @@ public class MItem {
 		return items;
 	}
         public static ArrayList<Item> getItemsBySearch(String search){
+            System.err.println(search);
             ArrayList<Item> items = new ArrayList<>();
             try{
                 MDB.connect();
@@ -98,7 +99,7 @@ public class MItem {
                 ps.setString(2, '%'+(search).toLowerCase()+'%');                
                 rs = ps.executeQuery();                               
                 if (rs.isBeforeFirst()){
-                    items = new ArrayList<>();
+                 //   items = new ArrayList<>();
                     while(rs.next()){
                         items.add(getItemFromResultSet(rs));
                     }                   
