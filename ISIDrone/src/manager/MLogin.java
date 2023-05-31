@@ -117,23 +117,16 @@ public class MLogin {
 		
 		return user;
 	}
-    public static void main(String ... args){
 
+         public static void main(String ... args){
             String password="Abc123!!!";
-
             try {
-
                 System.out.println(Hash.SHA1(password));                
-
             } catch (NoSuchAlgorithmException ex) {
-
                 Logger.getLogger(MLogin.class.getName()).log(Level.SEVERE, null, ex);
-
             } catch (UnsupportedEncodingException ex) {
-
                 Logger.getLogger(MLogin.class.getName()).log(Level.SEVERE, null, ex);
-
             }
 
-}
+         }
 }
