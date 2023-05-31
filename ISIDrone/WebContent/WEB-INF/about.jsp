@@ -23,7 +23,7 @@
 		<div class="col-lg-6 col-sm-6 text-center">
 			<img class="img-circle img-responsive img-center"
 				src="images/about/David.jpg" alt="Photo de David"
-				style="max-width: 250px; max-height: 250px; min-width: 250px;">
+				style="max-width: 250px; max-height: 260px; min-width: 250px;">
 			<h3>
 				David Pelletier <small>Webmestre</small>
 			</h3>
@@ -31,9 +31,36 @@
 		<div class="col-lg-6 col-sm-6 text-center">
 			<img class="img-circle img-responsive img-center"
 				src="images/about/Laurent.jpg" alt="Photo de Laurent"
-				style="max-width: 250px; max-height: 250px; min-width: 250px;">
+				style="max-width: 250px; max-height: 260px; min-width: 250px;">
 			<h3>
 				Laurent Beauregard <small>Webmestre</small>
+			</h3>
+		</div>
+            
+            <div class="col-lg-6 col-sm-6 text-center">
+			<img class="img-circle img-responsive img-center"
+				src="images/about/Montassar.jpeg" alt="Photo de Montassar"
+				style="max-width: 250px; max-height: 260px; min-width: 250px;">
+			<h3>
+				Montassar Boukhari <small>Webmestre</small>
+			</h3>
+		</div>
+            
+            <div class="col-lg-6 col-sm-6 text-center">
+			<img class="img-circle img-responsive img-center"
+				src="images/about/Jean.jpeg" alt="Photo de Jean"
+				style="max-width: 250px; max-height: 260px; min-width: 250px;">
+			<h3>
+				Jean Waston Therane <small>Webmestre</small>
+			</h3>
+		</div>
+            
+            <div class="col-lg-6 col-sm-6 text-center">
+			<img class="img-circle img-responsive img-center"
+				src="images/about/Arsene.png" alt="Photo de Arsene"
+				style="max-width: 250px; max-height: 290px; min-width: 250px;">
+			<h3>
+				Arsene Fokam Poka <small>Webmestre</small>
 			</h3>
 		</div>
 	</div>
