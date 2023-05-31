@@ -24,7 +24,7 @@ public class MLogin {
 		try {
 			MDB.connect();
 			
-			String query = "SELECT user.id, user.lastName, user.firstName, user.email, user.password,"
+			String query = "SELECT user.id, user.lastName, user.firstName, user.email, user.password,user.type_utilisateur,"
 					+ "address.id, address.no, address.appt, address.street, address.zip, address.city, address.state, address.country"
 					+ " FROM user INNER JOIN address on user.ship_address_id = address.id WHERE email = ? AND password = ?";
 			ps = MDB.getPS(query);
@@ -36,9 +36,9 @@ public class MLogin {
 			ResultSet rs = ps.getResultSet();
 			
 			if(rs.next()) {
-				address = new Address(rs.getInt(6), rs.getString(7), rs.getString(8), rs.getString(9),
-						rs.getString(10), rs.getString(11), rs.getString(12), rs.getString(13));
-				user = new User(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), address);
+				address = new Address(rs.getInt(7), rs.getString(8), rs.getString(9), rs.getString(10),
+						rs.getString(11), rs.getString(12), rs.getString(13), rs.getString(14));
+				user = new User(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), address,rs.getString(6));
 			}	
 		} catch (SQLException | NoSuchAlgorithmException | UnsupportedEncodingException e) {
 			e.printStackTrace();
@@ -117,7 +117,7 @@ public class MLogin {
 		
 		return user;
 	}
-        
+
          public static void main(String ... args){
             String password="Abc123!!!";
             try {

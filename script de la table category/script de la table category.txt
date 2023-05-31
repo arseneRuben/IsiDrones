@@ -1,0 +1,10 @@
+ALTER TABLE category
+ADD is_active BOOLEAN NOT NULL DEFAULT 1;
+
+Note: si la colonne is_active a ete deja dans la table category et sa valeur est 0, executez les requets suivantes.
+
+ALTER TABLE category ALTER COLUMN is_active SET DEFAULT 1;
+
+SET SQL_SAFE_UPDATES=0;
+
+UPDATE category SET is_active=1;
