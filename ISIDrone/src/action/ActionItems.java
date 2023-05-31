@@ -14,5 +14,9 @@ public class ActionItems {
 	public static void getItemById(int id, HttpServletRequest request, HttpServletResponse response) {
 		request.setAttribute("item", MItem.getItemById(id));
 	}
+        
+        public static void getItemsBySearch(HttpServletRequest request, String search) {
+		request.setAttribute("items", MItem.getItemsBySearch(search));
+	}
 	
 }

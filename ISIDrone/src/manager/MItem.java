@@ -63,7 +63,7 @@ public class MItem {
 		
 		return item;
 	}
-
+        
 	public static ArrayList<Item> getFeaturedItems() {
 		ArrayList<Item> items = new ArrayList<Item>();
 		try {
@@ -85,6 +85,32 @@ public class MItem {
 		}
 		return items;
 	}
+        public static ArrayList<Item> getItemsBySearch(String search){
+            ArrayList<Item> items = new ArrayList<>();
+            try{
+                MDB.connect();
+                String query;
+                ResultSet rs;
+                
+                query = "SELECT * FROM product WHERE LOWER(`name`) LIKE ? OR LOWER(`description`) LIKE ?";
+                PreparedStatement ps = MDB.getPS(query);
+		ps.setString(1, '%'+(search).toLowerCase()+'%');
+                ps.setString(2, '%'+(search).toLowerCase()+'%');                
+                rs = ps.executeQuery();                               
+                if (rs.isBeforeFirst()){
+                    items = new ArrayList<>();
+                    while(rs.next()){
+                        items.add(getItemFromResultSet(rs));
+                    }                   
+                }               
+            }catch(SQLException e) {
+                e.printStackTrace();
+            }
+            finally {
+                MDB.disconnect();
+            }
+            return items;
+        }
 	
 	private static Item getItemFromResultSet(ResultSet rs) {
 
