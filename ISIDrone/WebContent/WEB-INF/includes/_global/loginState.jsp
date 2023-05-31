@@ -22,6 +22,7 @@ if(user != null) {%>
 	<a href="#" id="user"><%=user.getFirstName()%></a>
 	<ul id="userAction" class="list-unstyled navbar navbar-default">
 		<li><a href="<%="order-history"%>">Historique commande</a></li>
+                <li><a href="<%="product-history"%>">Historique produit</a></li>
 		<li>&nbsp;</li>
 		<li><a href="login">Déconnexion</a></li>
 	</ul>

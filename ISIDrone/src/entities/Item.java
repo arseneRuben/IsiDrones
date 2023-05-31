@@ -37,6 +37,13 @@ public class Item {
 		this.price = price;
 		this.isActive = isActive;
 	}
+        public Item(int category, String name,double price,int stock) {
+		
+		this.category = category;
+		this.stock = stock;
+		this.name = name;
+		this.price = price;
+	}
 	
 	// Special getter
 	public String getImgAndPath(){

@@ -42,6 +42,7 @@ public class Const {
 	public static String PATH_PAGE_CARTUSER = PATH_PRIVATE + "cartuser.jsp";
 	public static String PATH_PAGE_ORDERHISTORY = PATH_PRIVATE + "order-history.jsp";
 	public static String PATH_PAGE_SERVICE = PATH_PRIVATE + "service.jsp";
+        public static String PATH_PAGE_LISTPRODUCT = PATH_PRIVATE +"listProducts.jsp";
 	
 	// Index
 	public static String PATH_MENU_BANNER = PATH_INDEX_INCLUDES + "banner.jsp";		// Banner
