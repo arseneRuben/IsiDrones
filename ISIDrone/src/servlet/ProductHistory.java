@@ -30,5 +30,4 @@ public class ProductHistory extends HttpServlet {
 		request.getRequestDispatcher(Const.PATH_PAGE_ORDERHISTORY).forward(request, response);
 	}
 
-
 }
