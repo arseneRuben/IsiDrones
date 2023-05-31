@@ -7,7 +7,26 @@ public class User {
 		email,
 		password;
 	Address shipAddress;
-	
+        String userType;        
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
+    public User(int id, String lastName, String firstName, String email, String password, Address shipAddress, String userType) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.email = email;
+        this.password = password;
+        this.shipAddress = shipAddress;
+        this.userType = userType;
+    }
+
 	public User() {}
 	
 	public User(int id, String lastName, String firstName, String email,

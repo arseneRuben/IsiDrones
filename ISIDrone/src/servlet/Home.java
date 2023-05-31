@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import action.ActionCart;
 import action.ActionCategory;
+import action.ActionDbProperties;
 import action.ActionFeaturedProduct;
+import manager.MDB;
 
 /**
  * Servlet implementation class Index
@@ -20,7 +22,8 @@ public class Home extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		// Chargement des proprietes de la BD
+                ActionDbProperties.load();
 		//Récupération des catégories
 		ActionCategory.getCategories(request, response);
 		//Récupération des produits en vedettes
